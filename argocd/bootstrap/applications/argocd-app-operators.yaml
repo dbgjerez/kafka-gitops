@@ -13,6 +13,6 @@ spec:
     targetRevision: HEAD
   project: operators
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
