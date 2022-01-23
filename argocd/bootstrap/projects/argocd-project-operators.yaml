@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: operators
-  namespace: openshift-gitops
+  namespace: operators
 spec: 
   destinations:
   - namespace: 'openshift-operators'
