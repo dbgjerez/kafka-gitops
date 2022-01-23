@@ -2,7 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: bootstrap
-  namespace: openshift-gitops
+  namespace: gitops
+  # namespace: openshift-gitops
 spec:
   destination:
     name: ''
@@ -14,6 +15,6 @@ spec:
     targetRevision: HEAD
   project: default
   syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
