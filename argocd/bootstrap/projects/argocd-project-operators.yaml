@@ -5,7 +5,7 @@ metadata:
   namespace: operators
 spec: 
   destinations:
-  - namespace: 'openshift-operators'
+  - namespace: 'operators'
     server: https://kubernetes.default.svc
   sourceRepos:
   - https://github.com/dbgjerez/kafka-gitops
