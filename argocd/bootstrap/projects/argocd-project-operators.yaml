@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: operators
-  namespace: operators
+  namespace: gitops
 spec: 
   destinations:
   - namespace: 'operators'
